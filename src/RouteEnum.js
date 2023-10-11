@@ -2,23 +2,22 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Notifications from "./pages/Notifications/Notifications";
 import Users from "./pages/Users/Users";
-import MarketPlace from "./pages/Market Place/MarketPlace";
 import EarningSources from "./components/Revenue/EarningSources";
 import CommissionStructure from "./components/Revenue/CommissionStructure";
 import SusbcriptionStructrure from "./components/Revenue/SusbcriptionStructrure";
 import SupportRequests from "./pages/Support Reqeuests/SupportRequests";
 import FAQs from "./pages/Faqs/FAQs";
 import Categories from "./components/Faqs/Categories";
-import Collections from "./components/Market/Collections";
 import Nfts from "./components/Market/Nfts";
 import Subscriptions from "./components/Market/Subscriptions";
-import Revenue from "./pages/Revenue/Revenue";
 import Blog from "./pages/Blog/Blog";
 import Queries from "./components/Faqs/Queries";
 import Sidebar from "./components/sidebar/Sidebar";
 import Feedback from "./pages/Feedback/Feedback";
 import Login from "./pages/Login/Login";
 import User from "./pages/Users/User Screen/User";
+import NftDetails from "./components/Market/NFT/NftDetails";
+import Collections from "./pages/Market Place/Collections/Collections";
 
 function RouteEnum() {
   return (
@@ -49,7 +48,7 @@ function RouteEnum() {
             index
             element={
               <Sidebar>
-                <MarketPlace />
+                <Nfts />
               </Sidebar>
             }
           />
@@ -73,7 +72,25 @@ function RouteEnum() {
           />
 
           <Route
+            path="nft"
+            element={
+              <Sidebar>
+                <NftDetails />
+              </Sidebar>
+            }
+          />
+
+          <Route
             path="communityPosts"
+            element={
+              <Sidebar>
+                <Subscriptions />
+              </Sidebar>
+            }
+          />
+
+          <Route
+            path="subscriptions"
             element={
               <Sidebar>
                 <Subscriptions />
@@ -96,7 +113,7 @@ function RouteEnum() {
             index
             element={
               <Sidebar>
-                <Revenue />
+                <Queries />
               </Sidebar>
             }
           />
@@ -118,7 +135,7 @@ function RouteEnum() {
             }
           />
           <Route
-            path="subscritionStructure"
+            path="subscriptionStructure"
             element={
               <Sidebar>
                 <SusbcriptionStructrure />
@@ -164,14 +181,6 @@ function RouteEnum() {
             element={
               <Sidebar>
                 <FAQs />
-              </Sidebar>
-            }
-          />
-          <Route
-            path="queries"
-            element={
-              <Sidebar>
-                <Queries />
               </Sidebar>
             }
           />

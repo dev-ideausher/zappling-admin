@@ -17,6 +17,7 @@
 
   color: #4e4e4e;
 }
+
 .sidebar {
   position: fixed;
   width: 18%;
@@ -27,6 +28,7 @@
   height: 100vh;
   box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.04);
   background: #f8f7f7;
+  padding: 12px;
 }
 
 .angolaLogo {
@@ -40,6 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
   padding: 40px 0px 50px 0px;
 }
 
@@ -77,13 +80,16 @@
   align-items: center;
   width: 100%;
   height: 45px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   padding-left: 20px;
   text-decoration: none;
-  color: #1d1d1d;
   gap: 5%;
+  color: var(--neutral-4, #76716f);
+}
+
+.subCategoryLink {
 }
 
 .linkLogout {
@@ -134,13 +140,9 @@
 .userSubCategory {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  margin-right: -25px;
-  width: 90%;
+  width: 100%;
 }
 
 .addSubCategory {

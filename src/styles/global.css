@@ -1,12 +1,39 @@
 .userAccordion {
 }
 
+.accordionButtons {
+  border-bottom: 1px solid var(--neutral-2, #e7e5e4);
+}
+
+.borderRight {
+  border-right: 1px solid var(--neutral-2, #e7e5e4);
+  margin-left: -20px;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--neutral-2, #e7e5e4);
+}
+
 .accordionButton {
   border: none;
   background: none;
   padding: 5px;
   color: #76716f;
   font-size: 16px;
+}
+
+.back-red {
+  background-color: red;
+}
+
+.userDetails-1 {
+  padding: 0px 10px 0px 0px;
+}
+
+.pr-10 {
+  padding-right: 10px;
 }
 
 .accordionButtonSelected {
@@ -68,6 +95,58 @@ tr {
   border-bottom: 1px solid #e7e5e4;
 }
 
+.active {
+  border-radius: var(--border-m, 8px);
+  background: var(--neutral-2, #e7e5e4);
+  /* padding: 12px; */
+  color: var(--neutral-5, #252322) !important;
+  font-weight: 600;
+}
+
+.plusIconSideBar {
+  margin-right: 5px;
+}
+
+.active2 {
+  background: red;
+}
+
+.plusButtonSideBar {
+  border: none;
+  background: transparent;
+}
+
+.selectedTab {
+  border: none;
+  background: transparent;
+  font-style: 14px;
+  color: var(--neutral-5, #252322);
+  padding: 12px 16px 12px 40px;
+  border-radius: var(--border-m, 8px);
+  background: var(--neutral-2, #e7e5e4);
+}
+
+.normalTab {
+  border: none;
+  background: transparent;
+  color: var(--neutral-4, #76716f);
+  padding: 12px 16px 12px 40px;
+}
+
+.sideBarProfile {
+  border-radius: var(--border-m, 8px);
+  border: 1px solid var(--neutral-2, #e7e5e4);
+  background: var(--neutral-0, #fff);
+  display: flex;
+  padding: 14px 16px 14px 12px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  align-self: baseline;
+  justify-self: baseline;
+  width: 100%;
+}
+
 .activeStatus {
   color: var(--success-main, #099c4f);
   font-size: 14px;
@@ -78,6 +157,18 @@ tr {
   gap: 6px;
   border-radius: 6px;
   background: var(--success-bg, rgba(9, 156, 79, 0.08));
+}
+
+.suspendedStatus {
+  color: var(--danger-main, #e84d3c);
+  font-size: 14px;
+  display: flex;
+  padding: 4px 12px 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 6px;
+  background: var(--danger-bg, rgba(232, 77, 60, 0.08));
 }
 
 .verficationStatus {
@@ -391,4 +482,103 @@ label {
   border-radius: var(--border-m, 8px);
   background: var(--neutral-1, #f8f7f7);
   border: none;
+}
+
+.loginBack {
+  background: var(--neutral-1, #f8f7f7);
+  height: 100vh;
+}
+
+.loginBox {
+  padding: 20px 28px 28px 28px;
+  border-radius: 12px;
+  border: 1px solid var(--neutral-2, #e7e5e4);
+  background: var(--neutral-0, #fff);
+  box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.08);
+  align-items: flex-start;
+}
+
+.loginInput {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1.5px solid #e7e5e4;
+  background: var(--neutral-0, #fff);
+}
+
+.forgotPassword {
+  border: none;
+  background: none;
+  align-self: flex-end;
+}
+
+.loginButton {
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--border-m, 8px);
+  background: var(--primary-3, #f46a2c);
+}
+
+.borderRight {
+  border-right: 1px solid #e7e5e4;
+  margin-top: 1px;
+}
+
+.nftDetailsCol1 {
+  padding: 20px;
+}
+
+.moreButton {
+  color: var(--primary-3, #f46a2c);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  background: none;
+}
+
+.redirectButton {
+  padding: 8px;
+  border: none;
+  border-radius: var(--border-m, 8px);
+  background: var(--neutral-1, #f8f7f7);
+}
+
+.attibuteBox {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  flex: 1 0 0;
+  border-radius: var(--border-m, 8px);
+  border: 1px solid var(--neutral-2, #e7e5e4);
+}
+
+.progressBarRed {
+  width: 100%;
+  height: var(--border-m, 8px);
+  border-radius: 100px;
+  background: var(--danger-main, #e84d3c);
+}
+
+.progressBarBlue {
+  width: 182px;
+  height: var(--border-m, 8px);
+  border-radius: 100px;
+  background: var(--info-main, #296ec7);
+}
+
+.progressBarGreen {
+  width: 182px;
+  height: var(--border-m, 8px);
+  border-radius: 100px;
+  background: var(--info-main, #296ec7);
+}
+
+.orangeDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: var(--primary-3, #f46a2c);
 }

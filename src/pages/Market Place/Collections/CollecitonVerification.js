@@ -1,151 +1,173 @@
 import React, { useState } from "react";
-import pic from "../../assets/images/avatar.png";
-import Table from "../../components/Table template/Table";
-import Dropdown from "../../components/Dropdown/Dropdown";
-import SuspendUserModal from "./Modal/SuspendUser";
+import pic from "../../../assets/images/avatar.png";
+import nftImage from "../../../assets/images/nftImage.png";
+import Table from "../../../components/Table template/Table";
+import Dropdown from "../../../components/Dropdown/Dropdown";
 import { useNavigate } from "react-router-dom";
 
-const AllUsers = () => {
+const NftVerification = () => {
   const navigate = useNavigate();
   const dummy = [
     {
-      image: pic,
-      name: "Henry Flat",
-      id: "0x39a02...1e791",
-      joiningDate: "Feb 27, 2022, 23:57",
-      owned: "12",
-      created: "12",
-      posts: "12",
+      itemImage: nftImage,
       activityStatus: "Active",
-      verificationStatus: "Unverified",
+      id: "0x39a02...1e791",
+      priceEth: "0.0042",
+      priceUs: "7.35",
+      collectionStatus: "Unverified",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      itemName: "Maroon",
+      itemCollectionName: "GreyCollection",
     },
     {
-      image: pic,
-      name: "Henry Flat",
-      id: "0x39a02...1e791",
-      joiningDate: "Feb 27, 2022, 23:57",
-      owned: "12",
-      created: "12",
-      posts: "12",
+      itemImage: nftImage,
       activityStatus: "Active",
-      verificationStatus: "Unverified",
+      id: "0x39a02...1e791",
+      priceEth: "0.0042",
+      priceUs: "7.35",
+      collectionStatus: "Unverified",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      itemName: "Maroon",
+      itemCollectionName: "GreyCollection",
     },
     {
-      image: pic,
-      name: "Henry Flat",
-      id: "0x39a02...1e791",
-      joiningDate: "Feb 27, 2022, 23:57",
-      owned: "12",
-      created: "12",
-      posts: "12",
+      itemImage: nftImage,
       activityStatus: "Active",
-      verificationStatus: "Unverified",
+      id: "0x39a02...1e791",
+      priceEth: "0.0042",
+      priceUs: "7.35",
+      collectionStatus: "Unverified",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      itemName: "Maroon",
+      itemCollectionName: "GreyCollection",
     },
     {
-      image: pic,
-      name: "Henry Flat",
-      id: "0x39a02...1e791",
-      joiningDate: "Feb 27, 2022, 23:57",
-      owned: "12",
-      created: "12",
-      posts: "12",
+      itemImage: nftImage,
       activityStatus: "Active",
-      verificationStatus: "Unverified",
+      id: "0x39a02...1e791",
+      priceEth: "0.0042",
+      priceUs: "7.35",
+      collectionStatus: "Unverified",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      itemName: "Maroon",
+      itemCollectionName: "GreyCollection",
     },
     {
-      image: pic,
-      name: "Henry Flat",
-      id: "0x39a02...1e791",
-      joiningDate: "Feb 27, 2022, 23:57",
-      owned: "12",
-      created: "12",
-      posts: "12",
+      itemImage: nftImage,
       activityStatus: "Active",
-      verificationStatus: "Unverified",
+      id: "0x39a02...1e791",
+      priceEth: "0.0042",
+      priceUs: "7.35",
+      collectionStatus: "Unverified",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      itemName: "Maroon",
+      itemCollectionName: "GreyCollection",
     },
     {
-      image: pic,
-      name: "Henry Flat",
-      id: "0x39a02...1e791",
-      joiningDate: "Feb 27, 2022, 23:57",
-      owned: "12",
-      created: "12",
-      posts: "12",
+      itemImage: nftImage,
       activityStatus: "Active",
-      verificationStatus: "Unverified",
+      id: "0x39a02...1e791",
+      priceEth: "0.0042",
+      priceUs: "7.35",
+      collectionStatus: "Unverified",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      itemName: "Maroon",
+      itemCollectionName: "GreyCollection",
     },
     {
-      image: pic,
-      name: "Henry Flat",
-      id: "0x39a02...1e791",
-      joiningDate: "Feb 27, 2022, 23:57",
-      owned: "12",
-      created: "12",
-      posts: "12",
+      itemImage: nftImage,
       activityStatus: "Active",
-      verificationStatus: "Unverified",
+      id: "0x39a02...1e791",
+      priceEth: "0.0042",
+      priceUs: "7.35",
+      collectionStatus: "Unverified",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      itemName: "Maroon",
+      itemCollectionName: "GreyCollection",
     },
     {
-      image: pic,
-      name: "Henry Flat",
-      id: "0x39a02...1e791",
-      joiningDate: "Feb 27, 2022, 23:57",
-      owned: "12",
-      created: "12",
-      posts: "12",
+      itemImage: nftImage,
       activityStatus: "Active",
-      verificationStatus: "Unverified",
+      id: "0x39a02...1e791",
+      priceEth: "0.0042",
+      priceUs: "7.35",
+      collectionStatus: "Unverified",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      itemName: "Maroon",
+      itemCollectionName: "GreyCollection",
     },
   ];
-  const [openSuspendModal, setOpenSuspendModal] = useState(false);
 
-  const onDeleteClick = () => {
-    setOpenSuspendModal(true);
-  };
-
-  const columnsUserTable = [
+  const columnActivityTable = [
     {
-      Header: () => <p className="text-left f-400 font-14 ">User</p>,
-      accessor: "name",
+      Header: () => <p className="text-left f-400 font-14 ">NFT</p>,
+      accessor: "nft",
       Cell: (tableProps) => (
-        <div className="d-flex gap-2" onClick={() => navigate("/users/user")}>
-          <img src={tableProps.row.original.image} alt="userImg" />
+        <div
+          className="d-flex gap-2"
+          onClick={() => navigate("/marketPlace/nft")}
+        >
+          <img src={tableProps.row.original.itemImage} />
           <div className="d-flex d-flex-column">
-            <p className=" font-14">{tableProps.row.original.name}</p>
-            <p className="text-grey">{tableProps.row.original.id}</p>
+            <p className="font-14 f-600">{tableProps.row.original.itemName}</p>
+            <p className="font-14 f-500 text-grey">
+              {tableProps.row.original.itemCollectionName}
+            </p>
           </div>
         </div>
       ),
     },
     {
-      Header: () => <p className="text-left f-400 font-14 ">Date joined</p>,
+      Header: () => <p className="text-left f-400 font-14 ">Price</p>,
 
-      accessor: "joiningDate",
-      Cell: (tableProps) => <p>{tableProps.row.original.joiningDate}</p>,
-    },
-
-    {
-      Header: () => <p className="text-left f-400 font-14 ">Owned</p>,
-
-      accessor: "owned",
+      accessor: "priceUs",
       Cell: (tableProps) => (
-        <p className="font-16">{tableProps.row.original.owned}</p>
-      ),
-    },
-    {
-      Header: () => <p className="text-left f-400 font-14 ">Created</p>,
-      accessor: "created",
-      Cell: (tableProps) => (
-        <p className="font-16">{tableProps.row.original.created}</p>
+        <div className="d-flex d-flex-column">
+          <p className="font-14 f-600">
+            ETH {tableProps.row.original.priceEth}
+          </p>
+          <p className="text-grey f-500">$ {tableProps.row.original.priceUs}</p>
+        </div>
       ),
     },
 
     {
-      Header: () => <p className="text-left f-400 font-14 ">Posts</p>,
+      Header: () => <p className="text-left f-400 font-14 ">Owner</p>,
 
-      accessor: "posts",
+      accessor: "senderName, id",
       Cell: (tableProps) => (
-        <p className="font-16">{tableProps.row.original.posts}</p>
+        <div className="d-flex gap-2">
+          <img src={tableProps.row.original.ownerPic} alt="userImg" />
+          <div className="d-flex d-flex-column">
+            <p className=" font-14">{tableProps.row.original.ownerName}</p>
+            <p className="text-grey">{tableProps.row.original.id}</p>
+          </div>
+        </div>
+      ),
+    },
+
+    {
+      Header: () => <p className="text-left f-400 font-14 ">Date received</p>,
+
+      accessor: "dateReceived",
+      Cell: (tableProps) => (
+        <p className="">{tableProps.row.original.dateReceived}</p>
       ),
     },
 
@@ -171,10 +193,10 @@ const AllUsers = () => {
 
     {
       Header: () => (
-        <p className="text-left f-400 font-14 ">Verification status</p>
+        <p className="text-left f-400 font-14 ">Collection status</p>
       ),
 
-      accessor: "verificationStatus",
+      accessor: "collectionStatus",
       Cell: (tableProps) => (
         <div className="verficationStatus">
           <svg
@@ -189,33 +211,30 @@ const AllUsers = () => {
               fill="#76716F"
             />
           </svg>
-          <p className="font-16">
-            {tableProps.row.original.verificationStatus}
-          </p>
+          <p className="font-16">{tableProps.row.original.collectionStatus}</p>
         </div>
       ),
     },
 
     {
-      Header: () => <p className="text-left f-400 font-14 "> </p>,
-      accessor: "actions",
-      Cell: (tableProps) => (
-        <div className="actionsCategories">
-          <button className="btn-action" onClick={() => onDeleteClick()}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-            >
-              <path
-                d="M14.166 4.99996H18.3327V6.66663H16.666V17.5C16.666 17.9602 16.2929 18.3333 15.8327 18.3333H4.16602C3.70578 18.3333 3.33268 17.9602 3.33268 17.5V6.66663H1.66602V4.99996H5.83268V2.49996C5.83268 2.03973 6.20578 1.66663 6.66602 1.66663H13.3327C13.7929 1.66663 14.166 2.03973 14.166 2.49996V4.99996ZM14.9993 6.66663H4.99935V16.6666H14.9993V6.66663ZM7.49935 9.16663H9.16602V14.1666H7.49935V9.16663ZM10.8327 9.16663H12.4993V14.1666H10.8327V9.16663ZM7.49935 3.33329V4.99996H12.4993V3.33329H7.49935Z"
-                fill="#E84D3C"
-              />
-            </svg>
-          </button>
-        </div>
+      Header: () => <p className="text-left f-400 font-14 "></p>,
+
+      accessor: "aa",
+      Cell: () => (
+        <button className="redirectButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M5 10C3.9 10 3 10.9 3 12C3 13.1 3.9 14 5 14C6.1 14 7 13.1 7 12C7 10.9 6.1 10 5 10ZM19 10C17.9 10 17 10.9 17 12C17 13.1 17.9 14 19 14C20.1 14 21 13.1 21 12C21 10.9 20.1 10 19 10ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+              fill="#76716F"
+            />
+          </svg>
+        </button>
       ),
     },
   ];
@@ -247,10 +266,6 @@ const AllUsers = () => {
 
   return (
     <div className="col-12 mt-4">
-      <SuspendUserModal
-        isOpen={openSuspendModal}
-        onClose={() => setOpenSuspendModal(false)}
-      />
       <div className="d-flex d-justify-space-between d-align-center mb-4">
         <div className="d-flex gap-5">
           <div className="tableSearch">
@@ -286,8 +301,15 @@ const AllUsers = () => {
             Filters
           </button>
         </div>
+
+        <Dropdown
+          label={"Sort by"}
+          options={sortByOptions}
+          onChange={handleChange}
+          value={sortValue}
+        />
       </div>
-      <Table tableData={dummy} tableColumns={columnsUserTable} />
+      <Table tableData={dummy} tableColumns={columnActivityTable} />
 
       <div className="d-flex d-justify-space-between d-align-center mb-4 mt-4">
         <Dropdown
@@ -333,4 +355,4 @@ const AllUsers = () => {
   );
 };
 
-export default AllUsers;
+export default NftVerification;

@@ -11,7 +11,7 @@ const UserOverview = () => {
 
   return (
     <div className="d-flex mt-5">
-      <div className="col-4 p-relative">
+      <div className="col-4 p-relative ">
         <img src={cover} alt="user" />
         <img className="col-2 userPicPlacement p-absolute" src={userPic} />
 
@@ -79,7 +79,7 @@ const UserOverview = () => {
             </div>
           </div>
 
-          <div className="d-flex">
+          <div className="d-flex ">
             <div className="col-6 mt-3 ">
               <p className="font-14 f-500 text-grey">Verification status</p>
               <p className="f-600">Unverified</p>
@@ -94,7 +94,9 @@ const UserOverview = () => {
           </div>
         </div>
       </div>
-      <div className="col-8">
+
+      <div className="borderRight"></div>
+      <div className="col-8 p-10">
         <div className="d-flex gap-4 accordionButtons">
           <button
             onClick={() => setSelectedTab("Owned")}

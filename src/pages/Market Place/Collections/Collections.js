@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import Overview from "../../pages/Market Place/NFTs/Overview";
-import MostReportedNfts from "../../pages/Market Place/NFTs/MostReportedNfts";
-import AllNfts from "../../pages/Market Place/NFTs/AllNfts";
-import NftVerification from "../../pages/Market Place/Collections/CollecitonVerification";
+import CollectionOverview from "./CollectionOverview";
+import AllCollections from "./AllCollections";
+import NftVerification from "./CollecitonVerification";
+import MostReportedCollections from "./MostReportedCollections";
 
-const Users = () => {
+const Collections = () => {
   const [selectedTab, setSelectedTab] = useState("overview");
 
   return (
     <div className="col-11">
-      <h1 className="font-18">NFTs</h1>
+      <h1 className="font-18">Collections</h1>
       <div className="d-flex d-flex-column">
         <div className="d-flex gap-4 accordionButtons">
           <button
@@ -26,7 +26,16 @@ const Users = () => {
               selectedTab === "allnfts" ? "accordionButtonSelected" : ""
             }`}
           >
-            All NFTs
+            All Collections
+          </button>
+
+          <button
+            onClick={() => setSelectedTab("verification")}
+            className={` accordionButton ${
+              selectedTab === "verification" ? "accordionButtonSelected" : ""
+            }`}
+          >
+            Verification
           </button>
 
           <button
@@ -35,16 +44,16 @@ const Users = () => {
               selectedTab === "most reported" ? "accordionButtonSelected" : ""
             }`}
           >
-            Most reported
+            Most Reported
           </button>
         </div>
-        {selectedTab === "overview" && <Overview />}
-        {selectedTab === "allnfts" && <AllNfts />}
-        {selectedTab === "most reported" && <MostReportedNfts />}
+        {selectedTab === "overview" && <CollectionOverview />}
+        {selectedTab === "allnfts" && <AllCollections />}
         {selectedTab === "verification" && <NftVerification />}
+        {selectedTab === "most reported" && <MostReportedCollections />}
       </div>
     </div>
   );
 };
 
-export default Users;
+export default Collections;
