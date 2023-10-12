@@ -582,3 +582,10 @@ label {
   border-radius: 10px;
   background: var(--primary-3, #f46a2c);
 }
+
+.socialMedia {
+  border-radius: 12px;
+  border: 1px solid var(--light-2, #eaeaea);
+  background: var(--neutral-0, #fff);
+  padding: 8px;
+}

@@ -18,6 +18,9 @@ import Login from "./pages/Login/Login";
 import User from "./pages/Users/User Screen/User";
 import NftDetails from "./components/Market/NFT/NftDetails";
 import Collections from "./pages/Market Place/Collections/Collections";
+import CommunityPosts from "./components/Market/CommunityPosts";
+import PostDetails from "./components/Market/Posts/PosttDetails";
+import CollectionDetails from "./components/Market/Collections/CollectionDetails";
 
 function RouteEnum() {
   return (
@@ -63,6 +66,15 @@ function RouteEnum() {
           />
 
           <Route
+            path="collection"
+            element={
+              <Sidebar>
+                <CollectionDetails />
+              </Sidebar>
+            }
+          />
+
+          <Route
             path="nfts"
             element={
               <Sidebar>
@@ -84,7 +96,16 @@ function RouteEnum() {
             path="communityPosts"
             element={
               <Sidebar>
-                <Subscriptions />
+                <CommunityPosts />
+              </Sidebar>
+            }
+          />
+
+          <Route
+            path="post"
+            element={
+              <Sidebar>
+                <PostDetails />
               </Sidebar>
             }
           />

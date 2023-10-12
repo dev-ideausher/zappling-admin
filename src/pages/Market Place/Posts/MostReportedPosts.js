@@ -5,150 +5,133 @@ import Table from "../../../components/Table template/Table";
 import Dropdown from "../../../components/Dropdown/Dropdown";
 import { useNavigate } from "react-router-dom";
 
-const AllCollections = () => {
+const MostReportedPosts = () => {
   const navigate = useNavigate();
   const dummy = [
     {
       itemImage: nftImage,
+      title:
+        "Behold a mysterious MNLTH, etched with Nike & RTFKT markings. It seems to be sentient . . . What does it do",
       activityStatus: "Active",
       id: "0x39a02...1e791",
-      priceEth: "0.0042",
-      priceUs: "7.35",
-      collectionStatus: "Unverified",
+      likes: "23",
+      comments: "35",
       ownerPic: pic,
       ownerName: "Henry Flat",
       dateReceived: "Feb 27, 2022, 23:57",
-      itemName: "Maroon",
-      itemCollectionName: "GreyCollection",
+      reported: "12",
+    },
+
+    {
+      itemImage: nftImage,
+      title:
+        "Behold a mysterious MNLTH, etched with Nike & RTFKT markings. It seems to be sentient . . . What does it do",
+      activityStatus: "Active",
+      id: "0x39a02...1e791",
+      likes: "23",
+      comments: "35",
+      ownerPic: pic,
+      ownerName: "Henry Flat",
+      dateReceived: "Feb 27, 2022, 23:57",
+      reported: "12",
     },
     {
       itemImage: nftImage,
+      title:
+        "Behold a mysterious MNLTH, etched with Nike & RTFKT markings. It seems to be sentient . . . What does it do",
       activityStatus: "Active",
       id: "0x39a02...1e791",
-      priceEth: "0.0042",
-      priceUs: "7.35",
-      collectionStatus: "Unverified",
+      likes: "23",
+      comments: "35",
       ownerPic: pic,
       ownerName: "Henry Flat",
       dateReceived: "Feb 27, 2022, 23:57",
-      itemName: "Maroon",
-      itemCollectionName: "GreyCollection",
+      reported: "12",
     },
     {
       itemImage: nftImage,
+      title:
+        "Behold a mysterious MNLTH, etched with Nike & RTFKT markings. It seems to be sentient . . . What does it do",
       activityStatus: "Active",
       id: "0x39a02...1e791",
-      priceEth: "0.0042",
-      priceUs: "7.35",
-      collectionStatus: "Unverified",
+      likes: "23",
+      comments: "35",
       ownerPic: pic,
       ownerName: "Henry Flat",
       dateReceived: "Feb 27, 2022, 23:57",
-      itemName: "Maroon",
-      itemCollectionName: "GreyCollection",
+      reported: "12",
     },
     {
       itemImage: nftImage,
+      title:
+        "Behold a mysterious MNLTH, etched with Nike & RTFKT markings. It seems to be sentient . . . What does it do",
       activityStatus: "Active",
       id: "0x39a02...1e791",
-      priceEth: "0.0042",
-      priceUs: "7.35",
-      collectionStatus: "Unverified",
+      likes: "23",
+      comments: "35",
       ownerPic: pic,
       ownerName: "Henry Flat",
       dateReceived: "Feb 27, 2022, 23:57",
-      itemName: "Maroon",
-      itemCollectionName: "GreyCollection",
+      reported: "12",
     },
     {
       itemImage: nftImage,
+      title:
+        "Behold a mysterious MNLTH, etched with Nike & RTFKT markings. It seems to be sentient . . . What does it do",
       activityStatus: "Active",
       id: "0x39a02...1e791",
-      priceEth: "0.0042",
-      priceUs: "7.35",
-      collectionStatus: "Unverified",
+      likes: "23",
+      comments: "35",
       ownerPic: pic,
       ownerName: "Henry Flat",
       dateReceived: "Feb 27, 2022, 23:57",
-      itemName: "Maroon",
-      itemCollectionName: "GreyCollection",
+      reported: "12",
     },
     {
       itemImage: nftImage,
+      title:
+        "Behold a mysterious MNLTH, etched with Nike & RTFKT markings. It seems to be sentient . . . What does it do",
       activityStatus: "Active",
       id: "0x39a02...1e791",
-      priceEth: "0.0042",
-      priceUs: "7.35",
-      collectionStatus: "Unverified",
+      likes: "23",
+      comments: "35",
       ownerPic: pic,
       ownerName: "Henry Flat",
       dateReceived: "Feb 27, 2022, 23:57",
-      itemName: "Maroon",
-      itemCollectionName: "GreyCollection",
+      reported: "12",
     },
     {
       itemImage: nftImage,
+      title:
+        "Behold a mysterious MNLTH, etched with Nike & RTFKT markings. It seems to be sentient . . . What does it do",
       activityStatus: "Active",
       id: "0x39a02...1e791",
-      priceEth: "0.0042",
-      priceUs: "7.35",
-      collectionStatus: "Unverified",
+      likes: "23",
+      comments: "35",
       ownerPic: pic,
       ownerName: "Henry Flat",
       dateReceived: "Feb 27, 2022, 23:57",
-      itemName: "Maroon",
-      itemCollectionName: "GreyCollection",
-    },
-    {
-      itemImage: nftImage,
-      activityStatus: "Active",
-      id: "0x39a02...1e791",
-      priceEth: "0.0042",
-      priceUs: "7.35",
-      collectionStatus: "Unverified",
-      ownerPic: pic,
-      ownerName: "Henry Flat",
-      dateReceived: "Feb 27, 2022, 23:57",
-      itemName: "Maroon",
-      itemCollectionName: "GreyCollection",
+      reported: "12",
     },
   ];
 
   const columnActivityTable = [
     {
-      Header: () => <p className="text-left f-400 font-14 ">NFT</p>,
-      accessor: "nft",
+      Header: () => <p className="text-left f-400 font-14 ">Post</p>,
+      accessor: "title",
       Cell: (tableProps) => (
         <div
           className="d-flex gap-2"
-          onClick={() => navigate("/marketPlace/collection")}
+          onClick={() => navigate("/marketPlace/nft")}
         >
           <img src={tableProps.row.original.itemImage} />
-          <div className="d-flex d-flex-column">
-            <p className="font-14 f-600">{tableProps.row.original.itemName}</p>
-            <p className="font-14 f-500 text-grey">
-              {tableProps.row.original.itemCollectionName}
-            </p>
-          </div>
-        </div>
-      ),
-    },
-    {
-      Header: () => <p className="text-left f-400 font-14 ">Price</p>,
-
-      accessor: "priceUs",
-      Cell: (tableProps) => (
-        <div className="d-flex d-flex-column">
-          <p className="font-14 f-600">
-            ETH {tableProps.row.original.priceEth}
-          </p>
-          <p className="text-grey f-500">$ {tableProps.row.original.priceUs}</p>
+          <p className="font-14 f-600">{tableProps.row.original.title}</p>
         </div>
       ),
     },
 
     {
-      Header: () => <p className="text-left f-400 font-14 ">Owner</p>,
+      Header: () => <p className="text-left f-400 font-14 ">User</p>,
 
       accessor: "senderName, id",
       Cell: (tableProps) => (
@@ -161,9 +144,26 @@ const AllCollections = () => {
         </div>
       ),
     },
+    {
+      Header: () => <p className="text-left f-400 font-14 ">Likes</p>,
+
+      accessor: "likes",
+      Cell: (tableProps) => (
+        <p className="text-grey f-500 col-4">{tableProps.row.original.likes}</p>
+      ),
+    },
 
     {
-      Header: () => <p className="text-left f-400 font-14 ">Date received</p>,
+      Header: () => <p className="text-left f-400 font-14 ">Comments</p>,
+
+      accessor: "comments",
+      Cell: (tableProps) => (
+        <p className="text-grey f-500"> {tableProps.row.original.comments}</p>
+      ),
+    },
+
+    {
+      Header: () => <p className="text-left f-400 font-14 ">Date created</p>,
 
       accessor: "dateReceived",
       Cell: (tableProps) => (
@@ -192,27 +192,11 @@ const AllCollections = () => {
     },
 
     {
-      Header: () => (
-        <p className="text-left f-400 font-14 ">Collection status</p>
-      ),
+      Header: () => <p className="text-left f-400 font-14 ">No. of reports</p>,
 
-      accessor: "collectionStatus",
+      accessor: "reported",
       Cell: (tableProps) => (
-        <div className="verficationStatus">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <path
-              d="M8.00047 7.05767L11.3003 3.75781L12.2431 4.70062L8.94327 8.00047L12.2431 11.3003L11.3003 12.2431L8.00047 8.94327L4.70062 12.2431L3.75781 11.3003L7.05767 8.00047L3.75781 4.70062L4.70062 3.75781L8.00047 7.05767Z"
-              fill="#76716F"
-            />
-          </svg>
-          <p className="font-16">{tableProps.row.original.collectionStatus}</p>
-        </div>
+        <p className="text-danger">{tableProps.row.original.reported}</p>
       ),
     },
 
@@ -355,4 +339,4 @@ const AllCollections = () => {
   );
 };
 
-export default AllCollections;
+export default MostReportedPosts;
